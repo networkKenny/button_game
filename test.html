@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>按鈕遊戲</title>
+</head>
+<body>
+    <!-- <a href="#" id="crack">外掛</a> -->
+    <div id="myDIV">
+        <button id="start">1</button>
+    </div>
+    
+    <script>
+        let count = 1;
+        function addButton(){
+            count++;
+            const para = document.createElement("button");
+            para.innerHTML = count;
+            document.getElementById("myDIV").appendChild(para);
+        }
+        document.getElementById('start').addEventListener('click', addButton);
+        // document.getElementById('crack').addEventListener('click', function(){
+        //     let loop = Number(prompt('Enter number'));
+        //     for(let i =1;i<=loop;i++){
+        //         addButton();
+        //     }
+        // })
+    </script>
+</body>
+</html>
